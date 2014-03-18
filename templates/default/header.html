@@ -37,9 +37,8 @@
         <div class="nav-collapse collapse">
           <ul class="nav">
            
-           <li class="logoBox"><div class="logo"><span class="badge badge-warning" id="notification">&nbsp;</span>{$configurationManager->get('PROGRAM_VERSION')}</div></li>
+           <li class="logoBox"><a id="aLogoBox" href="index.php"><div class="logo"><span class="badge badge-warning" id="notification">&nbsp;</span>{$configurationManager->get('PROGRAM_VERSION')}</div></a></li>
           {if="$myUser!=false"}
-              <li><a href="index.php"><i class="icon-home"></i> Accueil</a></li>
               {loop="menuItems"}
               <li>{$value.content}</li>
               {/loop}
